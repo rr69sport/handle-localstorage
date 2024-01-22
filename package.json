@@ -2,9 +2,16 @@
   "name": "handle-localstorage",
   "version": "0.0.1",
   "description": "Simple LocalStorage management package",
-  "main": "index.js",
+  "main": "./node-build/index.js",
+  "browser": "./browser-build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "build:browser": "tsc src/index.ts --outDir browser-build --module ES2022 --target ES2022",
+    "build:node": "tsc src/index.ts --outDir node-build --target ES2022",
+    "build": "npm run build:browser && npm run build:node",
+    "del:builds": "rm -rf node-build browser-build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +27,15 @@
   "bugs": {
     "url": "https://github.com/rr69sport/handle-localstorage/issues"
   },
-  "homepage": "https://github.com/rr69sport/handle-localstorage#readme"
+  "homepage": "https://github.com/rr69sport/handle-localstorage#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "eslint": "8.56.0",
+    "eslint-config-standard-with-typescript": "43.0.1",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "16.6.2",
+    "eslint-plugin-promise": "6.1.1",
+    "typescript": "5.3.3",
+    "vitest": "1.2.1"
+  }
 }
