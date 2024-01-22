@@ -1,33 +1,35 @@
 # Handle Localstorage
 
-## Herramientas para desarrollo de la librería
+## English
 
-- [ ] Git (Obligatorio)
-- [ ] Instalable desde NPM (Obligatorio)
-- [ ] Typescript (Opcional pero recomendado)
-- [ ] Linter (Opcional pero recomendado)
-- [ ] Testing (Recomendado)
+## Tools for library development
 
-## Requisitos
+- [x] Git (Required)
+- [x] Typescript (Optional but recommended)
+- [x] Linter (Optional but recommended)
+- [ ] Testing (Recommended)
+- [ ] Installable from NPM (Required)
 
-- [ ] Crear almacenes según se necesite
-- [ ] Borrar un almacén (Gestionar si está vacío o no)
-- [ ] Obtener todos los datos guardados de un almacén
-- [ ] Borrar todos los datos de un almacén
-- [ ] Guardar un dato en un almacén
-- [ ] Obtener un dato de un almacén
-- [ ] Borrar un dato de un almacén
-- [ ] Editar un dato de un almacén
-- [ ] Ordenar los datos de distintas maneras
-  - [ ] Orden cronológico
-  - [ ] Orden cronológico inverso
-  - [ ] De forma aleatoria
-  - [ ] En base a un valor especificado por el usuario
+## Requirements
 
-## Esquema
+- [ ] Be able to create stores as needed
+- [ ] Delete a store (Manage whether it is empty or not)
+- [ ] Get all saved data from a store
+- [ ] Delete all data from a store
+- [ ] Save a data in a store
+- [ ] Obtain data from a store
+- [ ] Delete data from a store
+- [ ] Edit a store data
+- [ ] Sort data in different ways
+  - [ ] Chronological order
+  - [ ] Reverse chronological order
+  - [ ] Randomly
+  - [ ] Based on a user-specified value
 
-- Crear funciones para manejo de arrays, ordenamiento de items y CRUD de items de arrays.
-- Crear una clase nombrada `HandleLocalstorage` que contenga todos los métodos necesarios para un CRUD de almacenes.
+## Scheme
+
+- Create functions for array management, item ordering and CRUD of array items.
+- Create a class named `HandleLocalstorage` that contains all the methods necessary for a warehouse CRUD.
 
 ```js
 class HandleLocalstorage {
