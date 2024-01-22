@@ -1,7 +1,5 @@
 # Handle Localstorage
 
-## English
-
 ## Tools for library development
 
 - [x] Git (Required)
