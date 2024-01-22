@@ -1,0 +1,12 @@
+node_modules
+
+src
+
+.eslintignore
+.eslintrc.json
+.gitignore
+.npmignore
+
+tsconfig.json
+
+TODO.md
